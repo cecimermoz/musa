@@ -1,0 +1,204 @@
+:root {
+    --negro: #000;
+    --beige: rgb(222, 159, 118);
+    --marron: hsl(24, 50%, 32%);
+    --bordo: hsl(349, 100%, 18%);
+    --rojo: hsl(0, 58%, 42%);
+    --papiro:#fbf6e6;
+}
+* { margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+body {
+    background-image: url(../MATERIAL/fondos/hoja-fondo.jpg);
+    background-color: var(--papiro);
+    /* height: 3000px; You must set a specified height */
+    background-position: bottom; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1400px;
+    margin: auto;
+    font-family: 'EB Garamond', serif;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-image: url(../MATERIAL/fondos/nav-hoja.png);
+    background-size: 100%;
+    background-position-y: -25px;
+    background-repeat: no-repeat;
+}
+/* -------------------------- 
+            HEADER 
+----------------------------- */
+header {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+.musa {
+    max-height: 100px;
+}
+/*------------------ MENU ----------------*/
+.nav-menu{
+    position: relative;
+    top: 10px;
+}
+.nav-menu li{
+    display: inline;
+    list-style: none;
+}
+.nav-item a {
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--negro);
+    padding-bottom: 22px;
+    margin-right: 35px;
+    flex-grow: 1;
+    flex-direction: row;
+}
+.nav-item a:hover{
+    /* border-bottom: 2px solid var(--negro);  */
+    background-image: url(../MATERIAL/hand/hover.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.user {
+    max-width: 50px;
+    position: relative;
+    top: 15px;
+}
+/*------------------ SUBMENU ----------------*/
+.submenu{    
+    position: absolute;
+    left: 0;
+    max-width: 200px;
+    width: 100%;
+    margin: 25px 0;
+}
+.desplegable{
+	position: relative;
+}
+.submenu-item{
+    display: none;
+}
+.desplegable:hover .submenu-item{
+    display: block;
+    background-image: none;
+}
+.submenu-item:hover{
+    color: var(--marron);
+}
+/* -------------------------- 
+            MAIN 
+----------------------------- */
+/*------------------ SECTION PARRAFO ----------------*/
+.principal{
+    width: 85vw;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.principal h1{
+    font-size: 8vh;
+    font-style: italic;
+}
+.principal p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.principal a{
+    color: var(--bordo);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    padding: 0 0 2px 0;
+}
+.principal a:hover{
+    border-bottom: 1px solid var(--bordo);
+    font-weight: normal;
+}
+.explicacion{
+    width: 85vw;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+}
+/*------------------ EJERCICIOS ----------------*/
+.tipos{
+    width: 75vw;
+    margin: auto;
+    margin-bottom: 150px;
+}
+.tipos-ejer{
+    position: relative;
+    margin-bottom: 50px;
+}
+.tipos-ejer img{
+    margin-bottom: 30px;
+}
+.tipos-ejer a{
+    color: var(--beige);
+    text-decoration: none;
+    font-size: 29px;
+    transition: .5s;
+}
+.tipos-ejer a:hover{
+    color: var(--papiro);
+}
+.tipos-ejer-der{
+    text-align: right;
+}
+.ejercicio {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+}
+.ejercicio-dos{    
+    position: absolute;
+    right: 35px;
+    top: 40px;
+}
+.empezar{
+    display: none;
+}
+
+/*------------------ DIVISION ----------------*/
+.division{
+    margin: 100px auto;
+    text-align: center;
+}
+/* -------------------------- 
+            FOOTER 
+----------------------------- */
+footer{
+    height: 200px;
+    text-align: center;
+}
+.redes{
+    position: relative;
+    top: 75px;
+}
+.redes img {
+    width: 7.5%;
+    margin: 10px 50px;
+}
+.redes li {
+    display: inline;
+    list-style: none;
+}
+.redes a{
+    filter: grayscale(1);
+}
+.redes a:hover{
+    filter: grayscale(0);
+}

@@ -1,0 +1,1 @@
+1- cambiar el logo de user, porque el borde tiene que ser un poco más grueso.
