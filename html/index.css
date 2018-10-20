@@ -11,7 +11,7 @@
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 body {
     background-color: var(--papiro);
-    background-size: 100vw;
+    background-size: 100%;
     max-width: 1400px;
     font-family: 'EB Garamond', serif;
     font-style: italic;
@@ -187,7 +187,6 @@ main{
 /*------------------ SECTION LIBRO ----------------*/
 .libro {
     max-width: 65%;
-    max-height: 460px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -207,9 +206,8 @@ main{
     bottom: 170px;
 }
 .tinta2-hijo{
-    width: 40%;
-    height: 40%;
     opacity: 0.75;
+    height: 100%;
 }
 .tinta2-hijo:hover{
     opacity: 1;
@@ -223,7 +221,7 @@ main{
     left: 80px;
 }
 .libro-abierto{
-    width: 50%;
+
     margin: 0 auto;
     display: block;
     margin-bottom: 120px;
@@ -257,6 +255,7 @@ main{
     padding-bottom: 100px;
 }
 .underline{
+    margin-bottom: 50px;
     letter-spacing: -3px;
     text-decoration: underline;
     font-family: 'EB Garamond', serif;
@@ -275,6 +274,9 @@ footer{
     margin: 0 auto;
     height: 200px;
     text-align: center;
+}
+.redes{
+    padding: 5%;
 }
 .redes img {
     width: 7.5%;
