@@ -191,6 +191,8 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
 }
 .libro-tinta1{
     width: 60%;
@@ -202,8 +204,9 @@ main{
 .tinta2-padre{
     display: flex;
     justify-content: space-between;
-    position: relative;
-    bottom: 170px;
+    position: absolute;
+    bottom: -119px;
+    left: 72px;
 }
 .tinta2-hijo{
     opacity: 0.75;
@@ -214,11 +217,11 @@ main{
 }
 .tinta-der{
     position: relative;
-    right: 80px;
+    right: 150px;
 }
 .tinta-izq{
     position: relative;
-    left: 80px;
+    left: 150px;
 }
 .libro-abierto{
 
