@@ -2,8 +2,8 @@
     --negro: #000;
     --beige: rgb(222, 159, 118);
     --marron: hsl(24, 50%, 32%);
-    --bordo: hsl(349, 100%, 18%);
-    --rojo: hsl(0, 58%, 42%);
+    --bordo: rgb(91, 0, 16);
+    --rojo: rgb(169, 44, 44);
     --papiro:#fbf6e6;
 }
 * { margin:0;
@@ -16,7 +16,7 @@ body {
     background-position: bottom; /* Center the image */
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1400px;
+    width: 100%;
     margin: auto;
     font-family: 'EB Garamond', serif;
 }
@@ -103,17 +103,18 @@ header {
 ----------------------------- */
 /*------------------ SECTION PARRAFO ----------------*/
 .principal{
-    width: 85vw;
+    width: 75vw;
     margin: auto;
     text-align: center;
     margin-bottom: 50px;
 }
 .principal h1{
-    font-size: 8vh;
+    font-size: 9vh;
     font-style: italic;
+    margin-bottom: 4vh;    
 }
 .principal p{
-    font-size: 18px;
+    font-size: 3.65vh;
     font-weight: bold;
 }
 .principal a{
@@ -123,55 +124,52 @@ header {
     text-decoration: none;
     padding: 0 0 2px 0;
 }
+.principal h3{
+    font-size: 4.5vh;
+    color: var(--rojo);
+}
 .principal a:hover{
-    border-bottom: 1px solid var(--bordo);
-    font-weight: normal;
+    border-bottom: 1px solid var(--marron);
+    color: var(--marron);
 }
 .explicacion{
-    width: 85vw;
+    width: 70vw;
+    font-size: 3.8vh;
     text-align: center;
     margin: auto;
     margin-bottom: 100px;
 }
-/*------------------ EJERCICIOS ----------------*/
-.tipos{
-    width: 75vw;
-    margin: auto;
-    margin-bottom: 150px;
+.explicacion a{
+    color: var(--rojo);
+    font-weight: bold;
 }
-.tipos-ejer{
-    position: relative;
-    margin-bottom: 50px;
+.explicacion a:hover{
+    text-decoration: none;
 }
-.tipos-ejer img{
-    margin-bottom: 30px;
-}
-.tipos-ejer a{
+.ir-ejercicio{
+    display: block;
+    width: 35vw;
+    margin: 0 auto;
+    text-align: right;
+    padding: 20px 30px;
+    background-image: url("../material/hand/opcion4.png");
+    background-position-y: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
     color: var(--beige);
     text-decoration: none;
-    font-size: 29px;
-    transition: .5s;
+    font-size: 25px;
+    margin-bottom: 200px;
+    position: relative;
+    top: 10px;
+    animation-name: fadeInUp;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
 }
-.tipos-ejer a:hover{
+.ir-ejercicio:hover{
     color: var(--papiro);
+    transition-duration: 0.75s;
 }
-.tipos-ejer-der{
-    text-align: right;
-}
-.ejercicio {
-    position: absolute;
-    left: 20px;
-    top: 35px;
-}
-.ejercicio-dos{    
-    position: absolute;
-    right: 35px;
-    top: 40px;
-}
-/* .empezar{
-    display: none;
-} */
-
 /*------------------ DIVISION ----------------*/
 .division{
     margin: 100px auto;
@@ -189,7 +187,7 @@ footer{
     top: 75px;
 }
 .redes img {
-    width: 7.5%;
+    width: 6%;
     margin: 10px 50px;
 }
 .redes li {
@@ -198,7 +196,33 @@ footer{
 }
 .redes a{
     filter: grayscale(1);
+    transition: .5s;
 }
 .redes a:hover{
     filter: grayscale(0);
+}
+
+/* -----------------
+    KEYFRAMES
+    ---------------- */
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeInUp{
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
 }
