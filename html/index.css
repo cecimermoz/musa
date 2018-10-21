@@ -24,7 +24,8 @@ body {
 .cabecera{
     background-image: url(../MATERIAL/fondos/top.png);  
     background-repeat: no-repeat;
-    background-position-y: bottom;
+    background-size: 100%;
+    background-position-y: top;
     height: auto;
 }
 .cuerpo{
@@ -62,6 +63,7 @@ header{
 .nav-menu li{
     display: inline;
     list-style: none;
+    padding: 25px 0;
 }
 .nav-item a {
     text-decoration: none;
@@ -94,19 +96,26 @@ header{
     max-width: 200px;
     width: 100%;
     margin: 25px 0;
+    z-index: 1;
 }
 .desplegable{
-	position: relative;
+    position: relative;
 }
 .submenu-item{
     display: none;
 }
 .desplegable:hover .submenu-item{
     display: block;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto;
     background-image: none;
 }
 .submenu-item:hover{
-    color: var(--marron);
+    color: var(--papiro);
+    border-radius: 10px;
+    background-color: var(--marron);
+    opacity: .75;
 }
 /*------------------ PRESENTACION ----------------*/
 .titulo{
@@ -126,21 +135,25 @@ header{
     height: 156px;
 }
 .titulo .c-izq{
-    width: 45%;
+    width: 20%;
     animation-name: corchete-izq;
-    animation-duration: 2s;
+    animation-duration: 3.5s;
     margin: 2.5%;
+    /* animation-iteration-count: infinite; */
+
 }
 .titulo .c-der{
-    width: 45%;
+    width: 20%;
+    /* animation-iteration-count: infinite; */
     animation-name: corchete-der;
-    animation-duration: 2s;
+    animation-duration: 3.5s;
     margin: 2.5%;
 }
 .titulo-aparece{
     animation-name: titulo;
     animation-duration: 2s;
-    animation-delay: 0.35s;
+    animation-delay: 1s;
+    /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards; /*que permanezca en el ultimo fotograma*/
     opacity: 0;
 }
@@ -177,12 +190,12 @@ main{
 .principal a{
     color: var(--bordo);
     font-weight: normal;
-    text-decoration: none;
     padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--bordo);
+    text-decoration: none;
 }
 .principal a:hover{
-    border-bottom: 1px solid var(--bordo);
-    font-weight: 700;
+    border: none;
 }
 /*------------------ SECTION LIBRO ----------------*/
 .libro {
@@ -299,11 +312,11 @@ footer{
 
 /* -------------------------- KEYFRAMES ------------------------ */
 @keyframes corchete-der{
-    from {transform: translate(-100%);}
+    from {transform: translate(-180%);}
     to {transform: translateX(0%);}
 }
 @keyframes corchete-izq{
-    from {transform: translatex(100%);}
+    from {transform: translatex(180%);}
     to {transform: translateX(0%);}
 }
 @keyframes titulo{

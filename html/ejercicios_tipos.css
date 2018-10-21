@@ -10,8 +10,8 @@
     padding: 0;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 body {
-    background-image: url(../MATERIAL/fondos/hoja-fondo.jpg);
-    background-color: var(--papiro);
+    /* background-image: url(../MATERIAL/fondos/hoja-fondo.jpg); */
+    background-color: #000;
     /* height: 3000px; You must set a specified height */
     background-position: bottom; /* Center the image */
     background-repeat: no-repeat;
@@ -19,6 +19,12 @@ body {
     width: 100%;
     margin: auto;
     font-family: 'EB Garamond', serif;
+}
+.fondo-img{
+    z-index: -1;
+    position: absolute;
+    background-position: end;
+    max-width: 100%;
 }
 .container {
     width: 100%;
@@ -52,6 +58,7 @@ header {
 .nav-menu li{
     display: inline;
     list-style: none;
+    padding: 25px 0;
 }
 .nav-item a {
     text-decoration: none;
@@ -73,7 +80,7 @@ header {
     background-position-y: bottom;
 }
 .user {
-    max-width: 50px;
+    max-width: 55px;
     position: relative;
     top: 15px;
 }
@@ -84,19 +91,26 @@ header {
     max-width: 200px;
     width: 100%;
     margin: 25px 0;
+    z-index: 1;
 }
 .desplegable{
-	position: relative;
+    position: relative;
 }
 .submenu-item{
     display: none;
 }
 .desplegable:hover .submenu-item{
     display: block;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto;
     background-image: none;
 }
 .submenu-item:hover{
-    color: var(--marron);
+    color: var(--papiro);
+    border-radius: 10px;
+    background-color: var(--marron);
+    opacity: .75;
 }
 /* -------------------------- 
             MAIN 
@@ -115,8 +129,7 @@ main{
 /*------------------ EJERCICIOS ----------------*/
 .tipos{
     width: 75vw;
-    margin: auto;
-    margin-bottom: 150px;
+    margin: 100px auto 150px auto;
 }
 .tipos-ejer{
     position: relative;
@@ -137,12 +150,13 @@ main{
 }
 .actividad{
     margin: auto;
-    display: block;
+    display: inline-block;
     padding: 10px 0;
     transition: .4s;
+    color: var(--bordo);
 }
 .actividad:hover{
-    color: var(--rojo);
+    color: var(--beige);
     transition: .4s;
 }
 .ejercicio-dos:hover, .ejercicio:hover{
@@ -178,8 +192,8 @@ main{
 .actividad-texto{
     width: 40%;
     border-radius: 5px;
-    border: 1px solid var(--marron);
-    background-color: rgba(91, 0, 16, .75);
+    border: none;
+    background-color: rgba(91, 0, 16,.9);
     color: var(--papiro);
     font-size: 20px;
     font-family: 'EB Garamond', serif;
@@ -187,7 +201,7 @@ main{
 .actividad-texto::placeholder,
 textarea::placeholder{
     color: var(--papiro);
-    opacity: .5;
+    opacity: .75;
     font-size: 20px;
     font-family: 'EB Garamond', serif;
 }
@@ -197,16 +211,16 @@ textarea::placeholder{
     border-radius: 5px;
     cursor: pointer;
     background-color: var(--bordo);
-    opacity: .75;
+    opacity: .50;
     color: var(--papiro);
-    transition: 1s;
+    transition: .25s;
     font-size: 20px;
     font-family: 'EB Garamond', serif;
 }
 .siguiente:hover, 
 .button:hover{
     opacity: 1;
-    transition: 1s;
+    transition: .25s;
 }
 textarea{
     min-height: 100px;
