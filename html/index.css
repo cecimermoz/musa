@@ -137,21 +137,20 @@ header{
 .titulo .c-izq{
     width: 20%;
     animation-name: corchete-izq;
-    animation-duration: 3.5s;
+    animation-duration: 2.8s;
     margin: 2.5%;
     /* animation-iteration-count: infinite; */
-
 }
 .titulo .c-der{
     width: 20%;
     /* animation-iteration-count: infinite; */
     animation-name: corchete-der;
-    animation-duration: 3.5s;
+    animation-duration: 2.8s;
     margin: 2.5%;
 }
 .titulo-aparece{
     animation-name: titulo;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-delay: 1s;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards; /*que permanezca en el ultimo fotograma*/
