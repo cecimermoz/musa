@@ -1,1 +1,3 @@
 1- cambiar el logo de user, porque el borde tiene que ser un poco más grueso.
+2- arreglar el fondo de ejercicios_tipo.html puedo poner el fondo de "main" con Z-index -3, y las manchas de tinta negra
+por encima como segunda imagen, con z-index -2, y a los dos position absolute.

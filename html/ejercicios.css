@@ -52,6 +52,7 @@ header {
 .nav-menu li{
     display: inline;
     list-style: none;
+    padding: 25px 0;
 }
 .nav-item a {
     text-decoration: none;
@@ -73,7 +74,7 @@ header {
     background-position-y: bottom;
 }
 .user {
-    max-width: 50px;
+    max-width: 55px;
     position: relative;
     top: 15px;
 }
@@ -84,19 +85,26 @@ header {
     max-width: 200px;
     width: 100%;
     margin: 25px 0;
+    z-index: 1;
 }
 .desplegable{
-	position: relative;
+    position: relative;
 }
 .submenu-item{
     display: none;
 }
 .desplegable:hover .submenu-item{
     display: block;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto;
     background-image: none;
 }
 .submenu-item:hover{
-    color: var(--marron);
+    color: var(--papiro);
+    border-radius: 10px;
+    background-color: var(--marron);
+    opacity: .75;
 }
 /* -------------------------- 
             MAIN 
