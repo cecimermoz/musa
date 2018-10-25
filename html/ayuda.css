@@ -1,0 +1,166 @@
+:root {
+    --negro: #000;
+    --beige: rgb(222, 159, 118);
+    --marron: rgb(122, 73, 40);
+    --bordo: rgb(91, 0, 16);
+    --rojo: rgb(169, 44, 44);
+    --papiro:#fbf6e6;
+}
+* { margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+body {
+    background-image: url(../MATERIAL/fondos/main.png);
+    font-family: 'EB Garamond', serif;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-image: url(../MATERIAL/fondos/nav-hoja.png);
+    background-size: 100%;
+    background-position-y: -25px;
+    background-repeat: no-repeat;
+}
+/* -------------------------- 
+            HEADER 
+----------------------------- */
+header {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+.musa {
+    max-height: 100px;
+}
+/*------------------ MENU ----------------*/
+.nav-menu{
+    position: relative;
+    top: 10px;
+}
+.nav-menu li{
+    display: inline;
+    list-style: none;
+    padding: 25px 0;
+}
+.nav-item a {
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--negro);
+    padding-bottom: 22px;
+    margin-right: 35px;
+    flex-grow: 1;
+    flex-direction: row;
+}
+.nav-item a:hover{
+    /* border-bottom: 2px solid var(--negro);  */
+    background-image: url(../MATERIAL/hand/hover.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.user {
+    max-width: 55px;
+    position: relative;
+    top: 15px;
+}
+/*------------------ SUBMENU ----------------*/
+.submenu{    
+    position: absolute;
+    left: 0;
+    max-width: 200px;
+    width: 100%;
+    margin: 25px 0;
+    z-index: 1;
+}
+.desplegable{
+    position: relative;
+}
+.submenu-item{
+    display: none;
+}
+.desplegable:hover .submenu-item{
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto;
+    background-image: none;
+}
+.submenu-item:hover{
+    color: var(--papiro);
+    border-radius: 10px;
+    background-color: var(--marron);
+    opacity: .75;
+}
+/* -------------------------- 
+            MAIN 
+----------------------------- */
+main{
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 30vh;
+}
+/*------------------ SECTION PARRAFO ----------------*/
+.contenedor-ayuda h1{
+    font-size: 9vh;
+    font-style: italic;
+    width: 75vw;
+    margin: 40px auto;
+    text-align: center;
+}
+.ayuda{}
+.talleres{}
+.img-taller,
+.img-clases,
+.img-tutorias{
+    height: 250px;
+    width: 250px;
+    background-image: url(../MATERIAL/imagenes/ayuda-sprite.png);
+    background-position: center;
+}
+.img-clases{
+    background-position: top;
+}
+.img-tutorias{
+    background-position: bottom;
+}
+
+
+
+/* -------------------------- 
+            FOOTER 
+----------------------------- */
+footer{
+    background-image: url(../MATERIAL/fondos/bottom.png);
+    background-size: cover;
+    height: 200px;
+    text-align: center;
+}
+.redes{
+    position: relative;
+    top: 75px;
+}
+.redes img {
+    width: 6%;
+    margin: 10px 50px;
+}
+.redes li {
+    display: inline;
+    list-style: none;
+}
+.redes a{
+    filter: grayscale(1);
+    transition: .5s;
+}
+.redes a:hover{
+    filter: grayscale(0);
+}
