@@ -214,6 +214,7 @@ main{
     filter: hue-rotate(50deg);
 }
 .tinta2-padre{
+
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -222,7 +223,7 @@ main{
 }
 .tinta2-hijo{
     opacity: 0.75;
-    height: 100%;
+    width: 80%;
 }
 .tinta2-hijo:hover{
     opacity: 1;
@@ -236,7 +237,7 @@ main{
     left: 150px;
 }
 .libro-abierto{
-
+    width: 60%;
     margin: 0 auto;
     display: block;
     margin-bottom: 120px;
