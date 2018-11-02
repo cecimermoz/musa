@@ -1,0 +1,319 @@
+:root {
+    --negro: #000;
+    --beige: rgb(222, 159, 118);
+    --marron: hsl(24, 50%, 32%);
+    --bordo: hsl(349, 100%, 18%);
+    --rojo: hsl(0, 58%, 42%);
+    --papiro:#fbf6e6;
+}
+* { margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+body {
+    background-color: var(--papiro);
+    background-size: 100%;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}
+.papiro{
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+.cabecera{
+    background-image: url(../MATERIAL/fondos/top.png);  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    height: auto;
+}
+.cuerpo{
+    background-image: url(../MATERIAL/fondos/main.png);
+    background-size: 100vw;
+    background-position-y: 8em;
+    width: 100%;
+}
+.pie{
+    background-image: url(../MATERIAL/fondos/bottom.png);
+    background-size: 100vw;
+    width: 100%;
+}
+/* -------------------------- 
+            HEADER 
+----------------------------- */
+header{
+    width: 85vw;
+    margin: auto;
+}
+.barra-nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.musa {
+    max-height: 20vh;
+}
+/*------------------ MENU ----------------*/
+.nav-menu{
+    position: relative;
+    top: 10px;
+}
+.nav-menu li{
+    display: inline;
+    list-style: none;
+    padding: 25px 0;
+}
+.nav-item a {
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--negro);
+    padding-bottom: 22px;
+    margin-right: 35px;
+    flex-grow: 1;
+    flex-direction: row;
+}
+.nav-item a:hover{
+    /* border-bottom: 2px solid var(--negro);  */
+    background-image: url(../MATERIAL/hand/hover.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.user {
+    max-width: 55px;
+    position: relative;
+    top: 15px;
+}
+/*------------------ SUBMENU ----------------*/
+.submenu{    
+    position: absolute;
+    left: 0;
+    max-width: 200px;
+    width: 100%;
+    margin: 25px 0;
+    z-index: 1;
+}
+.desplegable{
+    position: relative;
+}
+.submenu-item{
+    display: none;
+}
+.desplegable:hover .submenu-item{
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto;
+    background-image: none;
+}
+.submenu-item:hover{
+    color: var(--papiro);
+    border-radius: 10px;
+    background-color: var(--marron);
+    opacity: .75;
+}
+/*------------------ PRESENTACION ----------------*/
+.titulo{
+    /* background-color: #c6c6c6; */
+    width: 70%;
+    height: auto;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo img{
+    height: 156px;
+}
+.titulo .c-izq{
+    width: 20%;
+    animation-name: corchete-izq;
+    animation-duration: 2.8s;
+    margin: 2.5%;
+    /* animation-iteration-count: infinite; */
+}
+.titulo .c-der{
+    width: 20%;
+    /* animation-iteration-count: infinite; */
+    animation-name: corchete-der;
+    animation-duration: 2.8s;
+    margin: 2.5%;
+}
+.titulo-aparece{
+    animation-name: titulo;
+    animation-duration: 1.5s;
+    animation-delay: 0.7s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards; /*que permanezca en el ultimo fotograma*/
+    opacity: 0;
+}
+.titulo li{
+    list-style: none;
+}
+.titulo-principal {
+    font-size: 3vw;
+    font-family: 'EB Garamond', serif;
+}
+.titulo-secundario{
+    font-size: 2vw;
+    font-weight: 600;
+}
+/* -------------------------- 
+            MAIN 
+----------------------------- */
+main{
+    width: 85vw;
+    margin: auto;
+}
+/*------------------ SECTION PARRAFO ----------------*/
+.principal{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.principal p{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2em;
+}
+.principal a{
+    color: var(--bordo);
+    font-weight: normal;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--bordo);
+    text-decoration: none;
+}
+.principal a:hover{
+    border: none;
+}
+/*------------------ SECTION LIBRO ----------------*/
+.libro {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+}
+.libro-tinta1{
+    width: 50%;
+    margin: 0 auto;
+}
+.libro-tinta1:hover{
+    filter: hue-rotate(50deg);
+}
+.tinta2-padre{
+    display: flex;
+    justify-content: space-between;
+	position: relative;
+	bottom: 20vh;
+}
+.tinta2-hijo{
+    opacity: 0.75;
+}
+.tinta2-hijo:hover{
+    opacity: 1;
+}
+.tinta-der{
+
+}
+.tinta-izq{
+
+}
+.libro-abierto{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 120px;
+}
+.usuario {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+}
+.logue-in{
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--marron);
+}
+.logue-in:hover{
+    font-weight: 700;
+    color: var(--rojo);
+}
+/*------------------ DIVISION ----------------*/
+.division{
+    margin: 100px auto;
+    text-align: center;
+}
+/*------------------ SECTION FRASE ----------------*/
+.frase{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.underline{
+    margin-bottom: 50px;
+    letter-spacing: -3px;
+    text-decoration: underline;
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+}
+.smooth{
+    text-align: end;
+    font-weight: 100;
+    font-size: 40px;
+}
+/* -------------------------- 
+            FOOTER 
+----------------------------- */
+footer{
+    width: 85vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.redes{
+    padding: 5%;
+}
+.redes img {
+    width: 7.5%;
+    margin: 10px 50px;
+}
+.redes li {
+    display: inline;
+    list-style: none;
+}
+.redes-img{
+    filter: grayscale(1);
+    line-height: 50%;
+}
+.redes-img:hover{
+    filter: grayscale(0);
+}
+
+/* -------------------------- KEYFRAMES ------------------------ */
+@keyframes corchete-der{
+    from {transform: translate(-180%);}
+    to {transform: translateX(0%);}
+}
+@keyframes corchete-izq{
+    from {transform: translatex(180%);}
+    to {transform: translateX(0%);}
+}
+@keyframes titulo{
+    0% {opacity: 0}
+    100% {opacity: 1}
+    }
+}
