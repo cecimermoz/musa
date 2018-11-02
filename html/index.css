@@ -10,7 +10,7 @@
     padding: 0;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 body {
-    background-color: var(--papiro);
+    background-color: var(--negro);
     background-size: 100%;
     font-family: 'EB Garamond', serif;
     font-style: italic;
@@ -58,6 +58,7 @@ header{
 .nav-menu{
     position: relative;
     top: 10px;
+	text-align: center;
 }
 .nav-menu li{
     display: inline;
@@ -299,7 +300,8 @@ footer{
     filter: grayscale(1);
     line-height: 50%;
 }
-.redes-img:hover{
+.redes-img:hover,
+.redes-img:active{
     filter: grayscale(0);
 }
 
