@@ -99,41 +99,100 @@ header {
     color: var(--papiro);
     border-radius: 10px;
     background-color: var(--marron);
-    opacity: .75;
+    opacity: .9;
 }
 /* -------------------------- 
             MAIN 
 ----------------------------- */
 main{
-    width: 70vw;
+    width: 75vw;
     margin: auto;
     margin-bottom: 30vh;
 }
 /*------------------ SECTION PARRAFO ----------------*/
-.contenedor-ayuda h1{
+.ayuda-texto{
+    margin-bottom: 50px;
+}
+.ayuda-texto h1{
     font-size: 9vh;
     font-style: italic;
-    width: 75vw;
-    margin: 40px auto;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+.ayuda-texto p, 
+.ayuda-texto h2{
+    font-size: 4vh;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ayuda-items{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.ayuda-items img{
+    width: 270px;
+    position: absolute;
+    border-radius: 10px;
+    z-index: -1;
+}
+.ayuda-item-texto{
+    width: 250px;
+    padding: 20px;
+    color: white;
+    align-self: flex-end;
     text-align: center;
 }
-.ayuda{}
-.talleres{}
-.img-taller,
-.img-clases,
-.img-tutorias{
-    height: 250px;
-    width: 250px;
-    background-image: url(../MATERIAL/imagenes/ayuda-sprite.png);
-    background-position: center;
-}
-.img-clases{
-    background-position: top;
-}
-.img-tutorias{
-    background-position: bottom;
-}
 
+/*------------------ SECTION FORMULARIO ----------------*/
+
+.ayuda-contacto{
+    width: 75%;
+    margin: auto;
+}
+.ayuda-contacto h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.ayuda-contacto-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form{
+    margin: 20px 10px;
+    border-radius: 20px 10px;
+    border: 1px solid var(--marron);
+    padding: 10px 10px;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+}
+.form:focus{
+    background-color: rgba(169, 44, 44, .8); 
+    color: var(--papiro);
+}
+.ayuda-contacto-form textarea{
+    line-height: 1.5em;
+    min-height: 150px;
+	max-height: 150px;
+	min-width: 70%;
+	max-width: 70%;
+}
+.boton{
+    width: 25%;
+    font-size: 20px;
+    background-color: rgba(169, 44, 44, .9); 
+    color: var(--papiro);
+    border: 2px solid rgba(122, 73, 40, 0);
+}
+.boton:hover,
+.boton:focus{
+    background-color: rgba(169, 44, 44, .20); 
+    color: var(--bordo);
+    border: 2px solid rgba(122, 73, 40, 1);   
+    transition: .5s ease-out; 
+}
 
 
 /* -------------------------- 

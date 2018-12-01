@@ -26,30 +26,23 @@
                                     <li><a class="submenu-item" href="#">Generador de Personaje</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item desplegable"><a href="#">Herramientas del Escritor</a>
+                            <!-- <li class="nav-item desplegable"><a href="#">Herramientas del Escritor</a>
                                 <ul class="submenu">
                                     <li><a href="#" class="submenu-item">Diccionario</a></li>
                                     <li><a href="#" class="submenu-item">Sinónimo y Antónimos</a></li>
                                     <li><a href="#" class="submenu-item">Nombres de personajes</a></li>
                                     <li><a href="#" class="submenu-item">Páginas amigas</a></li>
                                 </ul>
-                            </li>
-                            <li class="nav-item desplegable"><a href="#">Organizador de Ideas</a>
+                            </li> -->
+                            <!-- <li class="nav-item desplegable"><a href="#">Organizador de Ideas</a>
                                 <ul class="submenu">
                                     <li><a href="#" class="submenu-item">Infogramas</a></li>
                                     <li><a href="#" class="submenu-item">Storyplaner</a></li>
                                     <li><a href="#" class="submenu-item">Genealogía de Personaje</a></li>
                                 </ul>
-                            </li>
-                            <li class="nav-item desplegable"><a href="ayuda.html">Cómo ayudarte</a>
-                                <ul class="submenu">
-                                    <li><a class="submenu-item" href="#">Talleres</a></li>
-                                    <li><a class="submenu-item" href="#">Clases Virtuales</a></li>
-                                    <li><a class="submenu-item" href="#">Corrección y Tutorías</a></li>
-                                    <li><a class="submenu-item" href="#">Contacto</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a "user" href="http://www.google.com"><img class="user" src="../MATERIAL/logos e iconos/user.png" alt="Ingresar"/></a></li>
+                            </li> -->
+                            <li class="nav-item desplegable"><a href="ayuda.html">Cómo ayudarte</a></li>
+                            <li class="nav-item"><a "user" href="http://www.google.com" alt="ingresar"><img class="user" src="../MATERIAL/logos e iconos/user.png" alt="Ingresar"/></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -62,7 +55,7 @@
                             <li class="titulo-secundario">te ayuda cuando tu musa descansa</li>
                     </ul>
                     <div class="c-der">
-                        <img src="../material/hand/corch-der.png" alt="decoracion">                
+                        <img src="../material/hand/corch-der.png" alt="decoracion">
                     </div>
                 </div>
             </header>
@@ -71,13 +64,24 @@
             <main>
                 <section class="principal">
                     <article>
-                        <p>En este portal encontrarás diversas <a href="#" class="p-color">herramientas</a> para desarrollar tu y
-                            potenciar tu escritura, o superar los bloqueos <a href="ejercicios_tipos.html" class="p-color">creativos</a>, propios de cualquier escritor.
+                        <p>En este portal encontrarás diversas <a href="#" class="p-color">herramientas</a> para desarrollar tu creatividad y
+                            potenciar tu escritura, o superar los bloqueos <a href="ejercicios_tipos.html" class="p-color">creativos</a> propios de cualquier escritor.
                             Una página que posee tanto ejercicios como definiciones y sinónimos, <a href="#" class="p-color">juegos creativos</a> -individuales
-                            y grupales- e incluso una sección de <a href="#" class="p-color">seguimiento de proyectos</a>, 
+                            y grupales- e incluso una sección de <a href="#" class="p-color">seguimiento de proyectos</a>,
                             donde encontrarás aplicaciones como block de notas y un calendario de tu progreso a lo largo de los días.</p>
                     </article>
                 </section>
+                <div class="division">
+                    <img class="division-linea" src="../MATERIAL/hand/division.png" alt="">
+                </div>  <!-- CIERRA principal-->
+
+                <section class="explicacion">
+                    <h2>Ejercicio del Día</h2>
+                    <article>
+                        <p>¿Qué <a href="ejercicios_tipos.html">ejercicio</a> tienes ganas de practicar el día de hoy?</p>
+                    </article>
+                </section>
+
                 <section class="sec-libro">
                     <div class="libro">
                         <img class="libro-tinta1" src="../material/tinta/ink1.png" alt="">
@@ -89,14 +93,25 @@
                     <img class="libro-abierto" src="../material/logos e iconos/libro.png" alt="decoracion">
                 </section> <!-- Cierre section libro -->
                 <section class="usuario">
-                        <article>{ Recordá <a class="logue-in" href="#">loguearte</a> para guardar tu progreso }</article>
-                        <!-- <form action="enviar.php">
-                            <input type="text" placeholder="Usuario" required>
-                            <input type="email" required>
-                            <input type="password">
-                            <input type="submit" value="Ingresar">
-                        </form> -->
-                </section>  
+                        <article>{ Recordá <a class="logue-in reg" href="#">registrarte</a> o <a class="logue-in ing" href="#">ingresar</a>
+                            para guardar tu progreso }</article>
+
+                        <form action="enviar.php">
+                            <input class="form" type="text" placeholder="Nombre" required>
+                            <input class="form" type="text" placeholder="Apellido" required>
+                            <input class="form" type="text" placeholder="Usuario" title="El usuario con el que guardará sus datos en el sitio" required>
+                            <input class="form" type="email" placeholder="Mail" required>
+                            <input class="form" type="password" placeholder="Contraseña" required>
+                            <input class="form" type="password" placeholder="Confirme contraseña" required>
+                            <input class="form boton" type="submit" value="Registrar">
+                        </form>
+
+                        <form action="enviar.php">
+                            <input class="form" type="text" placeholder="Usuario / Mail" required>
+                            <input class="form" type="password" placeholder="Contraseña" required>
+                            <input class="form boton" type="submit" value="Ingresar">
+                        </form>
+                </section>
                 <div class="division">
                     <img class="division-linea" src="../MATERIAL/hand/division.png" alt="decoracion">
                 </div>

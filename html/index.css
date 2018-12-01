@@ -115,7 +115,7 @@ header{
     color: var(--papiro);
     border-radius: 10px;
     background-color: var(--marron);
-    opacity: .75;
+    opacity: .9;
 }
 /*------------------ PRESENTACION ----------------*/
 .titulo{
@@ -196,6 +196,21 @@ main{
 .principal a:hover{
     border: none;
 }
+/*------------------ SECTION EJERCICIOS ----------------*/
+.explicacion{
+    width: 70vw;
+    font-size: 4.5vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.explicacion a{
+    color: var(--rojo);
+    font-weight: bold;
+}
+.explicacion a:hover{
+    text-decoration: none;
+}
 /*------------------ SECTION LIBRO ----------------*/
 .libro {
     max-width: 65%;
@@ -242,6 +257,7 @@ main{
     display: block;
     margin-bottom: 120px;
 }
+/*------------------ REGISTRO O INGRESO ----------------*/
 .usuario {
     width: 100%;
     margin: auto;
@@ -250,15 +266,53 @@ main{
     font-style: italic;
     font-weight: 700;
 }
+.usuario article{
+    margin-bottom: 50px;
+}
 .logue-in{
     font-weight: 400;
     text-decoration: none;
     color: var(--marron);
 }
 .logue-in:hover{
-    font-weight: 700;
+    text-decoration: underline;
     color: var(--rojo);
 }
+.usuario form{
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form{
+    margin: 20px 10px;
+    border-radius: 20px 10px;
+    border: 1px solid var(--marron);
+    padding: 15px;
+    width: 250px;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.form:focus{
+    background-color: rgba(169, 44, 44, .8); 
+    color: var(--papiro);
+}
+.boton{
+    font-size: 20px;
+    background-color: rgba(169, 44, 44, .9); 
+    color: var(--papiro);
+    border: 2px solid rgba(122, 73, 40, 0);
+}
+.boton:hover,
+.boton:focus{
+    background-color: rgba(169, 44, 44, .20); 
+    color: var(--bordo);
+    border: 2px solid rgba(122, 73, 40, 1);   
+    transition: .5s ease-out; 
+}
+
 /*------------------ DIVISION ----------------*/
 .division{
     margin: 100px auto;

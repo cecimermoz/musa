@@ -11,7 +11,7 @@
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 body {
     /* background-image: url(../MATERIAL/fondos/hoja-fondo.jpg); */
-    background-color: #000;
+    background-color: #050006;
     /* height: 3000px; You must set a specified height */
     background-position: bottom; /* Center the image */
     background-repeat: no-repeat;
@@ -35,6 +35,11 @@ body {
     background-size: 100%;
     background-position-y: -25px;
     background-repeat: no-repeat;
+}
+button{
+    background-color: transparent;
+    font-family: 'EB Garamond', serif;
+    border: none;
 }
 /* -------------------------- 
             HEADER 
@@ -110,7 +115,7 @@ header {
     color: var(--papiro);
     border-radius: 10px;
     background-color: var(--marron);
-    opacity: .75;
+    opacity: .9;
 }
 /* -------------------------- 
             MAIN 
@@ -264,17 +269,4 @@ footer{
 }
 .redes a:hover{
     filter: grayscale(0);
-}
-
-/* -----------------
-    KEYFRAMES
-    ---------------- */
-
-@keyframes aparecer{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }
