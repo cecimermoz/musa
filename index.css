@@ -1,0 +1,402 @@
+:root {
+    --negro: #000;
+    --beige: rgb(222, 159, 118);
+    --marron: hsl(24, 50%, 32%);
+    --bordo: hsl(349, 100%, 18%);
+    --rojo: hsl(0, 58%, 42%);
+    --papiro:#fbf6e6;
+}
+* { margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+        -webkit-appearance: button; /* for input */
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+body {
+    background-color: var(--papiro);
+    background-size: 100%;
+    max-width: 1400px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}
+.container{
+    width: 100vw;   
+}
+.papiro{
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+.cabecera{
+    background-image: url(../MATERIAL/fondos/top.png);  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    height: auto;
+}
+.cuerpo{
+    background-image: url(../MATERIAL/fondos/main.png);
+    background-size: 100vw;
+    background-position-y: 8em;
+    width: 100%;
+}
+.pie{
+    background-image: url(../MATERIAL/fondos/bottom.png);
+    background-size: 100vw;
+}
+/* -------------------------- 
+            HEADER 
+----------------------------- */
+header{
+    width: 85vw;
+    margin: auto;
+}
+.barra-nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.musa {
+    max-height: 120px;
+}
+/*------------------ MENU ----------------*/
+.nav-menu{
+    position: relative;
+    top: 10px;
+}
+.nav-menu li{
+    display: inline;
+    list-style: none;
+    padding: 25px 0;
+}
+.nav-item a {
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--negro);
+    padding-bottom: 22px;
+    margin-right: 35px;
+    flex-grow: 1;
+    flex-direction: row;
+}
+.nav-item a:hover{
+    /* border-bottom: 2px solid var(--negro);  */
+    background-image: url(../MATERIAL/hand/hover.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.user {
+    max-width: 55px;
+    position: relative;
+    top: 15px;
+}
+/*------------------ SUBMENU ----------------*/
+.submenu{    
+    position: absolute;
+    left: 0;
+    max-width: 200px;
+    width: 100%;
+    margin: 25px 0;
+    z-index: 1;
+}
+.desplegable{
+    position: relative;
+}
+.submenu-item{
+    display: none;
+}
+.desplegable:hover .submenu-item{
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto;
+    background-image: none;
+}
+.submenu-item:hover{
+    color: var(--papiro);
+    border-radius: 10px;
+    background-color: var(--marron);
+    opacity: .9;
+}
+/*------------------ PRESENTACION ----------------*/
+.titulo{
+    /* background-color: #c6c6c6; */
+    width: 70%;
+    height: auto;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo img{
+    height: 156px;
+}
+.titulo .c-izq{
+    width: 20%;
+    animation-name: corchete-izq;
+    animation-duration: 2.8s;
+    margin: 2.5%;
+    /* animation-iteration-count: infinite; */
+}
+.titulo .c-der{
+    width: 20%;
+    /* animation-iteration-count: infinite; */
+    animation-name: corchete-der;
+    animation-duration: 2.8s;
+    margin: 2.5%;
+}
+.titulo-aparece{
+    animation-name: titulo;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards; /*que permanezca en el ultimo fotograma*/
+    opacity: 0;
+}
+.titulo li{
+    list-style: none;
+}
+.titulo-principal {
+    font-size: 38px;
+    font-family: 'EB Garamond', serif;
+}
+.titulo-secundario{
+    font-size: 30px;
+    font-weight: 600;
+}
+/* -------------------------- 
+            MAIN 
+----------------------------- */
+main{
+    width: 85vw;
+    margin: auto;
+}
+/*------------------ SECTION PARRAFO ----------------*/
+.principal{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.principal p{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2em;
+}
+.principal a{
+    color: var(--bordo);
+    font-weight: normal;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid var(--bordo);
+    text-decoration: none;
+}
+.principal a:hover{
+    border: none;
+}
+/*------------------ SECTION EJERCICIOS ----------------*/
+.explicacion{
+    width: 70vw;
+    font-size: 4.5vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.explicacion a{
+    color: var(--rojo);
+    font-weight: bold;
+}
+.explicacion a:hover{
+    text-decoration: none;
+}
+/*------------------ SECTION LIBRO ----------------*/
+.libro {
+    max-width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+}
+.libro-tinta1{
+    width: 60%;
+    margin: 0 auto;
+}
+.libro-tinta1:hover{
+    filter: hue-rotate(50deg);
+}
+.tinta2-padre{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -119px;
+}
+.tinta2-hijo{
+    opacity: 0.75;
+    width: 80%;
+}
+.tinta2-hijo:hover{
+    opacity: 1;
+}
+.tinta-der{
+    position: relative;
+    right: 150px;
+}
+.tinta-izq{
+    position: relative;
+    left: 150px;
+}
+.libro-abierto{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 120px;
+}
+/*------------------ REGISTRO O INGRESO ----------------*/
+.usuario {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+}
+.usuario article{
+    margin-bottom: 50px;
+}
+.logue-in{
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--marron);
+}
+.logue-in:hover{
+    text-decoration: underline;
+    color: var(--rojo);
+}
+.usuario form{
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form{
+    margin: 20px 10px;
+    border-radius: 20px 10px;
+    border: 1px solid var(--marron);
+    padding: 15px;
+    width: 250px;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.form:focus{
+    background-color: rgba(169, 44, 44, .8); 
+    color: var(--papiro);
+}
+.boton{
+    font-size: 20px;
+    background-color: rgba(169, 44, 44, .9); 
+    color: var(--papiro);
+    border: 2px solid rgba(122, 73, 40, 0);
+}
+.boton:hover,
+.boton:focus{
+    background-color: rgba(169, 44, 44, .20); 
+    color: var(--bordo);
+    border: 2px solid rgba(122, 73, 40, 1);   
+    transition: .5s ease-out; 
+}
+form.form_click,
+form.form_default{
+    display: none;
+}
+form.form_mostrar{
+    display: flex;
+}
+
+/*------------------ DIVISION ----------------*/
+.division{
+    margin: 100px auto;
+    text-align: center;
+}
+/*------------------ SECTION FRASE ----------------*/
+.frase{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.underline{
+    margin-bottom: 50px;
+    letter-spacing: -3px;
+    text-decoration: underline;
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+}
+.smooth{
+    text-align: end;
+    font-weight: 100;
+    font-size: 40px;
+}
+/* -------------------------- 
+            FOOTER 
+----------------------------- */
+footer{
+    width: 85vw;
+    margin: 0 auto;
+    height: 200px;
+    text-align: center;
+}
+.redes{
+    padding: 5%;
+}
+.redes img {
+    width: 7.5%;
+    margin: 10px 50px;
+}
+.redes li {
+    display: inline;
+    list-style: none;
+}
+.redes-img{
+    filter: grayscale(1);
+    line-height: 50%;
+}
+.redes-img:hover{
+    filter: grayscale(0);
+}
+
+/* -------------------------- KEYFRAMES ------------------------ */
+@keyframes corchete-der{
+    from {transform: translate(-180%);}
+    to {transform: translateX(0%);}
+}
+@keyframes corchete-izq{
+    from {transform: translatex(180%);}
+    to {transform: translateX(0%);}
+}
+@keyframes titulo{
+    0% {opacity: 0}
+    100% {opacity: 1}
+    }
+}
