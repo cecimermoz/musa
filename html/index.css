@@ -9,6 +9,20 @@
 * { margin:0;
     padding: 0;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+        -webkit-appearance: button; /* for input */
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
 body {
     background-color: var(--papiro);
     background-size: 100%;
@@ -231,12 +245,11 @@ main{
     filter: hue-rotate(50deg);
 }
 .tinta2-padre{
-
+    align-self: center;
     display: flex;
     justify-content: space-between;
     position: absolute;
     bottom: -119px;
-    left: 72px;
 }
 .tinta2-hijo{
     opacity: 0.75;
