@@ -24,6 +24,7 @@ button {
         -ms-user-select: none;
     }
 body {
+    background-image: url(../MATERIAL/fondos/hoja-fondo.jpg);
     background-color: var(--papiro);
     background-size: 100%;
     max-width: 1400px;

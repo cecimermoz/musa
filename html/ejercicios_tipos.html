@@ -56,8 +56,8 @@
                         <p>Si estás solo frente a tu computadora, no te preocupes, en <b>Musa Inspiradora</b> lo pensamos
                         todo para que no tengas excusas y empieces a crear. Responde cuantas oraciones quieras, y luego 
                         clickea en 'Leer Resultado' para observar qué texto se formó y guárdalo si te gusta.</p>
-                        <button class="actividad" href="#">Empezar ahora</button>
-                        <div class="empezar" class="formulario">
+                        <button id="empezar" class="actividad">Empezar ahora</button>
+                        <div id="empezarOk" class="empezar click" class="formulario">
                         <form action="#">
                             <p>----ORACION GENERADA----</p>
                             <input class="actividad-texto" type="text" placeholder="Escribe aquí" required>
@@ -76,8 +76,8 @@
                         la primer pregunta que se te venga a la cabeza, y responde con lo primero que se te venga a la 
                         mente también. Pregunta, luego responde, y repite este proceso cuánto quieras. Para observar el resultado 
                         final, haz click en "Leer Resultado".</p>
-                        <a class="actividad" href="#">Empezar ahora</a>
-                        <div class="empezar" class="formulario">
+                        <button  class="actividad">Empezar ahora</button>
+                        <div class="click" class="formulario">
                             <form action="#">
                                 <textarea class="actividad-texto" placeholder="Pregúntate; ¿quién es esa persona? ¿cómo sucedió aquello? ¿De qué hablan esas personas? ¿Cómo llegó eso, allí?, etc." required></textarea>
                                 <textarea class="actividad-texto" placeholder="Responde lo primero que se te ocurra, por más absurdo que parezca." required></textarea>
@@ -94,8 +94,8 @@
                             indistinto. Al escribirla, utiliza sus letras para crear nuevas palabras. Una vez que tengas tu lista de 
                             palabras, escribe una oración que la incluya (las oraciones no tienen que estar relacionadas entre sí, de nuevo,
                             escribe lo primero que te venga a la cabeza).</p>
-                        <a class="actividad" href="#">Empezar ahora</a>
-                        <form class="empezar" action="#">
+                        <button class="actividad" href="#">Empezar ahora</button>
+                        <form class="empezar click" action="#">
                             Escríbela Aquí: <input class="actividad-texto" type="text" placeholder="Recuerda, puede ser cualquier palabra" required>
                             <p>Ahora desglosa sus iniciales, y por cada letra, forma una nueva palabra a partir de ellas:</p>
                             <input type="text" class="actividad-texto peque" placeholder="Primer Letra/Palabra">
@@ -125,5 +125,14 @@
             <!-- <a href="http://www.freepik.com">Designed by starline / Freepik</a> -->
         </footer>
     </div> <!-- Cierra container -->
+
+    <script>
+        empezar.addEventListener(
+            "click",
+            function (){
+                empezarOk.classList.toggle("mostrar");
+            }
+        )
+    </script>
 </body>
 </html>

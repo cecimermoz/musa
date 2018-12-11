@@ -188,6 +188,12 @@ main{
     text-align: center;
     margin: 5vh 0;
 }
+.click{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
 .actividad-texto, 
 .siguiente, .button{
     display: block;
