@@ -124,6 +124,7 @@ main{
     font-size: 4vh;
     text-align: center;
     margin-bottom: 20px;
+    color: #000;
 }
 .ayuda-items{
     display: flex;
@@ -133,14 +134,14 @@ main{
 }
 .ayuda-items img{
     width: 270px;
-    position: absolute;
     border-radius: 10px;
     z-index: -1;
 }
 .ayuda-item-texto{
     width: 250px;
     padding: 20px;
-    color: white;
+    font-size: 1.5vw;
+    color: var(--negro);
     align-self: flex-end;
     text-align: center;
 }
