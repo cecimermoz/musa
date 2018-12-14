@@ -58,9 +58,9 @@
                         clickea en 'Leer Resultado' para observar qué texto se formó y guárdalo si te gusta.</p>
                         <button id="empezar1" class="actividad">Empezar ahora</button>
                         <div id="mostrar1" class="empezar click" class="formulario">
-                        <form action="#">
+                        <form action="ejercicioCadaver.php" method="post">
                             <p>----ORACION GENERADA----</p>
-                            <input class="actividad-texto" type="text" placeholder="Escribe aquí" required>
+                            <input name="frase_creada" class="actividad-texto" type="text" placeholder="Escribe aquí" required>
                             <input class="siguiente" type="submit" value="Siguiente">
                             <input class="button" type="button" value="Leer Resultado">
                             <!-- La idea es que esto genere un texto con todo lo que se ingresó, de ser posible con
