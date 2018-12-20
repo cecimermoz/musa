@@ -1,0 +1,147 @@
+@media (max-width: 1600px){
+    .cabecera{
+        background-size: 100vw;
+    }
+}
+@media (max-width: 1300px){
+    .musa{
+        max-height: 105px;
+    }
+    .nav-item a{
+        font-size: 20px;
+    }
+    .nav-menu li{
+        position: relative;
+        left: 10px;
+    }
+    .user{
+        max-width: 40px;
+    }
+    .titulo-principal{
+        font-size: 8vh;
+    }
+    .titulo-secundario{
+        font-size: 5vh;
+    }
+}
+@media (max-width: 1150px){
+    .musa{
+        display: none;
+    }
+    .nav-menu{
+        margin: auto;
+    }
+    .titulo img{
+        height: 120px;
+    }
+    .titulo-principal{
+        font-size: 7vh;
+    }
+    .principal{
+        margin-top: 50px;
+    }
+    .tinta2-padre{
+        left: 10px;
+    }
+    .sec-libro{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width: 900px){
+    .nav-item a{
+        font-size: 17px;
+    }
+    .user{
+        max-width: 35px;
+    }
+    .titulo img{
+        height: 100px;
+    }
+    .titulo-principal{
+        font-size: 5vh;
+    }
+    .titulo-secundario{
+        font-size: 3.5vh;
+    }
+    .tinta2-hijo{
+        width: 100%;
+    }
+    .tinta-der{
+        position: relative;
+        right: 100px;
+    }
+    .tinta-izq{
+        position: relative;
+        left: 100px;
+    }
+    .redes img {
+        width: 10%;
+        margin: 50px 20px;
+    }
+    .division-linea{
+        width: 80%;
+    }
+}
+@media (max-width: 776px){
+    .cabecera{
+        background-position-y: bottom;
+        height: 50vh;
+        background-size: cover;
+    }
+    .titulo{
+        display: none;
+    }
+    .nav-item a{
+    }
+    .nav-item a:hover{
+        color: var(--papiro);
+        border-radius: 10px;
+        background-color: var(--marron);
+        opacity: .75;
+        background-image: none;
+    }
+    .submenu, 
+    .desplegable, 
+    .desplegable:hover .submenu-item,
+    .submenu-item:hover,
+    .libro,
+    .libro-abierto,
+    .user{
+        display: none;
+    }
+    .principal{
+        margin-bottom: 100px;
+    }
+    .frase{
+        width: 90%;
+    }
+    .titulo-principal{
+        font-size: 2.5em;
+    }
+    .smooth{
+        font-size: 1.5em;
+    }
+    .pie{
+        background-size: cover;
+        background-position-y: top;
+    }
+    footer{
+        height: auto;
+    }
+}
+@media (max-width: 400px){
+    header{
+        width: 100vw;
+    }
+    .barra-nav{
+        padding-top: 5px;
+    }
+    footer{
+        width: 95%;
+    }
+    .redes img {
+        width: 15%;
+        margin: 10px;
+    }
+}

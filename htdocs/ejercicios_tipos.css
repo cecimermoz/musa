@@ -1,0 +1,278 @@
+:root {
+    --negro: #000;
+    --beige: rgb(222, 159, 118);
+    --marron: rgb(122, 73, 40);
+    --bordo: rgb(91, 0, 16);
+    --rojo: rgb(169, 44, 44);
+    --papiro:#fbf6e6;
+}
+* { margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+body {
+    /* background-image: url(../MATERIAL/fondos/hoja-fondo.jpg); */
+    background-color: #050006;
+    /* height: 3000px; You must set a specified height */
+    background-position: bottom; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100%;
+    margin: auto;
+    font-family: 'EB Garamond', serif;
+}
+.fondo-img{
+    z-index: -1;
+    position: absolute;
+    background-position: end;
+    max-width: 100%;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-image: url(../MATERIAL/fondos/nav-hoja.png);
+    background-size: 100%;
+    background-position-y: -25px;
+    background-repeat: no-repeat;
+}
+button{
+    background-color: transparent;
+    font-family: 'EB Garamond', serif;
+    border: none;
+}
+/* -------------------------- 
+            HEADER 
+----------------------------- */
+header {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+.musa {
+    max-height: 100px;
+}
+/*------------------ MENU ----------------*/
+.nav-menu{
+    position: relative;
+    top: 10px;
+}
+.nav-menu li{
+    display: inline;
+    list-style: none;
+    padding: 25px 0;
+}
+.nav-item a {
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--negro);
+    padding-bottom: 22px;
+    margin-right: 35px;
+    flex-grow: 1;
+    flex-direction: row;
+}
+.nav-item a:hover{
+    /* border-bottom: 2px solid var(--negro);  */
+    background-image: url(../MATERIAL/hand/hover.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.user {
+    max-width: 55px;
+    position: relative;
+    top: 15px;
+}
+/*------------------ SUBMENU ----------------*/
+.submenu{    
+    position: absolute;
+    left: 0;
+    max-width: 200px;
+    width: 100%;
+    margin: 25px 0;
+    z-index: 1;
+}
+.desplegable{
+    position: relative;
+}
+.submenu-item{
+    display: none;
+}
+.desplegable:hover .submenu-item{
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    margin: auto;
+    background-image: none;
+}
+.submenu-item:hover{
+    color: var(--papiro);
+    border-radius: 10px;
+    background-color: var(--marron);
+    opacity: .9;
+}
+/* -------------------------- 
+            MAIN 
+----------------------------- */
+main{
+    margin-bottom: 30vh;
+}
+/*------------------ SECTION PARRAFO ----------------*/
+.principal h1{
+    font-size: 9vh;
+    font-style: italic;
+    width: 75vw;
+    margin: 40px auto;
+    text-align: center;
+}
+/*------------------ EJERCICIOS ----------------*/
+.tipos{
+    width: 75vw;
+    margin: 100px auto 150px auto;
+}
+.tipos-ejer{
+    position: relative;
+    margin-bottom: 50px;
+}
+.ejer-resumen {
+    font-size: 22px;
+    text-align: justify;
+}
+.tipos-ejer img{
+    margin-bottom: 30px;
+}
+.ejercicio, .actividad, .ejercicio-dos{
+    color: var(--beige);
+    text-decoration: none;
+    font-size: 29px;
+    transition: .5s;
+}
+.actividad{
+    margin: auto;
+    display: inline-block;
+    padding: 10px 0;
+    transition: .4s;
+    color: var(--bordo);
+}
+.actividad:hover{
+    color: var(--beige);
+    transition: .4s;
+}
+.ejercicio-dos:hover, .ejercicio:hover{
+    color: var(--papiro);
+}
+.der{
+    text-align: right;
+}
+.ejercicio{
+    position: absolute;
+    left: 20px;
+    top: 35px;
+}
+.ejercicio-dos{    
+    position: absolute;
+    right: 35px;
+    top: 40px;
+}
+/* .empezar{
+    display: none;
+} */
+/*------------------ ACTIVIDADES ----------------*/
+.empezar{
+    text-align: center;
+    margin: 5vh 0;
+}
+.click{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+.actividad-texto, 
+.siguiente, .button{
+    display: block;
+    padding: 10px 20px;
+    margin: 15px auto;
+}
+.actividad-texto{
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(91, 0, 16,.9);
+    color: var(--papiro);
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+}
+.actividad-texto::placeholder,
+textarea::placeholder{
+    color: var(--papiro);
+    opacity: .75;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+}
+.siguiente, 
+.button{
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--bordo);
+    opacity: .50;
+    color: var(--papiro);
+    transition: .25s;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+}
+.siguiente:hover, 
+.button:hover{
+    opacity: 1;
+    transition: .25s;
+}
+textarea{
+    min-height: 100px;
+	max-height: 100px;
+	min-width: 50%;
+	max-width: 50%;
+}
+.peque{
+    width: 20%;
+    display: inline;
+}
+
+
+/*------------------ DIVISION ----------------*/
+/* .division{
+    margin: 100px auto;
+    text-align: center;
+} */
+/* -------------------------- 
+            FOOTER 
+----------------------------- */
+footer{
+    height: 200px;
+    text-align: center;
+}
+.redes{
+    position: relative;
+    top: 75px;
+}
+.redes img {
+    width: 6%;
+    margin: 10px 50px;
+}
+.redes li {
+    display: inline;
+    list-style: none;
+}
+.redes a{
+    filter: grayscale(1);
+    transition: .5s;
+}
+.redes a:hover{
+    filter: grayscale(0);
+}
