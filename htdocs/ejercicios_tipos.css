@@ -10,7 +10,7 @@
     padding: 0;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 body {
-    /* background-image: url(../MATERIAL/fondos/hoja-fondo.jpg); */
+    background-image: url(../MATERIAL/fondos/hoja-fondo.jpg);
     background-color: #050006;
     /* height: 3000px; You must set a specified height */
     background-position: bottom; /* Center the image */

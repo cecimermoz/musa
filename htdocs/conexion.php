@@ -1,8 +1,8 @@
 <?php
     $conexion = mysqli_connect(
-                            "localhost", 
-                            "root", 
-                            "", 
-                            "musa");
+        "localhost", 
+        "root", 
+        "", 
+        "musa");
 
 ?>

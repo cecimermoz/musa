@@ -1,3 +1,6 @@
+<?php 
+    include("sesion.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,7 +16,7 @@
     <img class="fondo-img" src="../MATERIAL/fondos/hoja-fondo.jpg" alt="">
     <div class="container">
         <header>
-            <a href="index.html"><img src="../MATERIAL/logos e iconos/logomusa.png" class="musa" alt="Musa Inspiradora"></a>
+            <a href="index.php"><img src="../MATERIAL/logos e iconos/logomusa.png" class="musa" alt="Musa Inspiradora"></a>
             <nav class="nav-menu">
                 <ul>
                     <li class="nav-item desplegable"><a href="#">Impulso Creativo</a>
@@ -38,7 +41,7 @@
                             <li><a href="#" class="submenu-item">Genealogía de Personaje</a></li>
                         </ul>
                     </li> -->
-                    <li class="nav-item desplegable"><a href="ayuda.html">Cómo ayudarte</a></li>
+                    <li class="nav-item desplegable"><a href="ayuda.php">Cómo ayudarte</a></li>
                     <li class="nav-item"><a "user" href="http://www.google.com"><img class="user" src="../MATERIAL/logos e iconos/user.png" alt="Ingresar"/></a></li>
                 </ul>
             </nav>
@@ -85,10 +88,12 @@
 
 
 
-                            <input type="hidden" name="custId" value="<?php echo $reg;?>">
+                            <input type="hidden" name="hidden" value="<?php echo $reg['frase'];?>">
+                            <input type="hidden" name="id" value="<?php
+                                echo $_SESSION['id']
+                            ?>">
                             <input name="frase_creada" class="actividad-texto" type="text" placeholder="Escribe aquí" required>
                             <input class="siguiente" type="submit" value="Siguiente">
-                            <input class="button" type="button" value="Leer Resultado">
                             <!-- La idea es que esto genere un texto con todo lo que se ingresó, de ser posible con
                             conectores copados -quizá aleatorios- y se vea como texto final y de la opción de 
                             guardarlo o no en la pc o en el usuario. -->

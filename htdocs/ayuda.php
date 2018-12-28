@@ -43,36 +43,6 @@
             </nav>
         </header>
         <main>
-            <section class="ayuda-contacto">
-                <?php
-                    $nombre = $_POST['nombre'];
-                    $numero = $_POST['numero'];
-                    $mail = $_POST['mail'];
-                    $mensaje = $_POST['mensaje'];
-
-                    // Para recepción de mail
-                    $destino = "ceee14m@gmail.com,cecii.mermoz@gmail.com";
-                    $cuerpo = "$nombre te envió el siguiente mensaje: <i><br>$mensaje</i> <br>Contactalo a su mail, $mail";
-
-                    // Envío en sí
-                    mail(
-                        $destino,
-                        "$nombre ha enviado un mensaje desde Musa Inspiradora",
-                        $cuerpo);
-                    
-                    Echo $cuerpo;
-
-                $cabeceras = 'From: Mensajes y Avisos <contacto@holamundo.com.ar>';
-                    mail(
-                        $mail,
-                        "Recibimos tu mensaje",
-                        "Te contestaremos a la brevedad,
-                        agendanos como contacto",
-                        $cabeceras
-                    );
-                    echo "La confirmación de recepción del mismo, será enviada a su casilla. <br>Muchas gracias.<br><i><b>Musa Inspiradora</i></b>";
-                ?>
-            </section>
             <section class="ayuda-texto">
                 <h1>Cómo te podemos Ayudar</h1>
                 <p>Si navegaste a lo largo de toda nuestra web, usaste las herramientas, hiciste los ejercicios
@@ -111,6 +81,18 @@
                     </div>
                 </div>
             </section>
+
+            <section class="ayuda-contacto">
+                <h2>Escribinos para más información sobre éstas u otras actividades:</h2>
+                <form class="ayuda-contacto-form" action="formularioContacto.php" method="post">
+                    <input class="form" type="text" name="nombre" value="Nombre Completo" required>
+                    <input class="form" type="text" name="numero" value="Número de contacto" required>
+                    <input class="form" type="email" name="mail" value="Correo Electrónico" required>
+                    <textarea class="form" name="mensaje" placeholder="Escriba su consulta aquí" cols="30" rows="10" maxlength="300" required></textarea>
+                    <input class="form boton" type="submit" value="Enviar">
+                </form>
+            </section>
+
         </main>
         <footer>
             <ul class="redes">

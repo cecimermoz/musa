@@ -41,7 +41,7 @@
                                     <li><a href="#" class="submenu-item">Genealogía de Personaje</a></li>
                                 </ul>
                             </li> -->
-                            <li class="nav-item desplegable"><a href="ayuda.html">Cómo ayudarte</a></li>
+                            <li class="nav-item desplegable"><a href="ayuda.php">Cómo ayudarte</a></li>
                             <li class="nav-item"><a "user" href="http://www.google.com" alt="ingresar"><img class="user" src="../MATERIAL/logos e iconos/user.png" alt="Ingresar"/></a></li>
                         </ul>
                     </nav>
@@ -65,7 +65,7 @@
                 <section class="principal">
                     <article>
                         <p>En este portal encontrarás diversas <a href="#" class="p-color">herramientas</a> para desarrollar tu creatividad y
-                            potenciar tu escritura, o superar los bloqueos <a href="ejercicios_tipos.html" class="p-color">creativos</a> propios de cualquier escritor.
+                            potenciar tu escritura, o superar los bloqueos <a href="ejercicios_tipos.php" class="p-color">creativos</a> propios de cualquier escritor.
                             Una página que posee tanto ejercicios como definiciones y sinónimos, <a href="#" class="p-color">juegos creativos</a> -individuales
                             y grupales- e incluso una sección de <a href="#" class="p-color">seguimiento de proyectos</a>,
                             donde encontrarás aplicaciones como block de notas y un calendario de tu progreso a lo largo de los días.</p>
@@ -78,7 +78,7 @@
                 <section class="explicacion">
                     <h2>Ejercicio del Día</h2>
                     <article>
-                        <p>¿Qué <a href="ejercicios_tipos.html">ejercicio</a> tienes ganas de practicar el día de hoy?</p>
+                        <p>¿Qué <a href="ejercicios_tipos.php">ejercicio</a> tienes ganas de practicar el día de hoy?</p>
                     </article>
                 </section>
 
@@ -96,19 +96,18 @@
                         <article>{ Recordá <button class="logue-in reg" id="registrarte">registrarte</button> o <button class="logue-in ing" id="ingresar" href="#">ingresar</button>
                             para guardar tu progreso }</article>
 
-                        <form id="registrarte_form" class="form_click" action="enviar.php">
-                            <input class="form" type="text" placeholder="Nombre" required>
-                            <input class="form" type="text" placeholder="Apellido" required>
-                            <input class="form" type="text" placeholder="Usuario" title="El usuario con el que guardará sus datos en el sitio" required>
-                            <input class="form" type="email" placeholder="Mail" required>
-                            <input class="form" type="password" placeholder="Contraseña" required>
-                            <input class="form" type="password" placeholder="Confirme contraseña" required>
+                        <form id="registrarte_form" class="form_click" action="enviar.php" method="post">
+                            <input class="form" type="text" placeholder="Nombre" name="nombre" required>
+                            <input class="form" type="text" placeholder="Apellido" name="apellido" required>
+                            <input class="form" type="text" placeholder="Usuario" name="nick" title="El usuario con el que guardará sus datos en el sitio" required>
+                            <input class="form" type="email" placeholder="Mail" name="mail" required>
+                            <input class="form" type="password" placeholder="Contraseña" name="clave" required>
                             <input class="form boton" type="submit" value="Registrar">
                         </form>
 
-                        <form id="ingresar_form" class="form_default" action="enviar.php">
-                            <input class="form" type="text" placeholder="Usuario / Mail" required>
-                            <input class="form" type="password" placeholder="Contraseña" required>
+                        <form id="ingresar_form" class="form_default" action="logueo.php" method="post">
+                            <input class="form" type="text" placeholder="Usuario / Mail" name="usuario" required>
+                            <input class="form" type="password" placeholder="Contraseña" name="clave" required>
                             <input class="form boton" type="submit" value="Ingresar">
                         </form>
                 </section>
