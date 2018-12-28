@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-12-2018 a las 02:08:50
--- Versión del servidor: 10.1.29-MariaDB
--- Versión de PHP: 7.2.0
+-- Tiempo de generación: 28-12-2018 a las 00:07:09
+-- Versión del servidor: 10.1.36-MariaDB
+-- Versión de PHP: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -105,10 +105,35 @@ INSERT INTO `ejercicio_cadaver` (`id_frase`, `frase`) VALUES
 
 CREATE TABLE `ejercicio_cadaver_usuario` (
   `id_frase_creada` int(3) NOT NULL,
-  `id_usuario` int(3) NOT NULL,
-  `clave` varchar(50) NOT NULL,
-  `frase_creada` text NOT NULL
+  `frase` text NOT NULL,
+  `frase_creada` text NOT NULL,
+  `id_usuario` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `ejercicio_cadaver_usuario`
+--
+
+INSERT INTO `ejercicio_cadaver_usuario` (`id_frase_creada`, `frase`, `frase_creada`, `id_usuario`) VALUES
+(1, 'La soledad, como todo, era...', 'ce', 19),
+(2, 'ï¿½Acaso no habï¿½a terminado?', 'df', 19),
+(3, 'acabar tirado', 'aqui solo', 19),
+(4, 'fanatismo', 'khv', 19),
+(5, 'tras el velo plateado', 'j b7', 19),
+(6, 'Consolarla no era una opciï¿½n, ï¿½verdad?', 'eggr', 19),
+(7, 'manecillas de reloj averiadas', 'fgshj', 19),
+(8, 'acabar tirado', 'sÃ³lo porque sÃ­', 20),
+(9, 'pulcritud exacta', 'La que existe aquÃ­', 20),
+(10, 'pulcritud exacta', 'La que existe aquÃ­', 20),
+(11, 'un ardid asï¿½', 'aparece cuando menos lo planeas', 20),
+(12, 'hacerse aï¿½icos', 'contra el cristal de la vida', 20),
+(13, 'El sol se pone y mientras tanto', 'arh', 19),
+(14, 'El sol se pone y mientras tanto', 'arh', 19),
+(15, 'El sol se pone y mientras tanto', 'arh', 19),
+(16, 'El sol se pone y mientras tanto', 'arh', 19),
+(17, '', 'eshgwh', 19),
+(18, 'La noche ameritaba que...', 'sea asi', 19),
+(19, 'consolidar', 'lo que paso', 19);
 
 -- --------------------------------------------------------
 
@@ -124,6 +149,19 @@ CREATE TABLE `usuarios` (
   `nick` varchar(12) NOT NULL,
   `mail` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `clave`, `nombre`, `apellido`, `nick`, `mail`) VALUES
+(14, 'ceci', 'Cecilia', 'Mermoz', 'ceci', 'ceci'),
+(15, 'ff44570aca8241914870afbc310cdb85', 'Juan', 'Perez', 'Juancho', 'ff44570aca8241914870afbc310cdb85'),
+(16, 'ff44570aca8241914870afbc310cdb85', 'Juan', 'Perez', 'Juancho', 'j@m.com'),
+(17, 'd41d8cd98f00b204e9800998ecf8427e', '', '', '', ''),
+(18, 'd41d8cd98f00b204e9800998ecf8427e', '', '', '', ''),
+(19, '9b5394fd929896fb9e90e26b3d18e63d', 'ce', 'ce', 'ce', 'ce@ce.com'),
+(20, 'fe650ed860c0a0c299e4559bc124cb12', 'Lucrecia', 'Maltes', 'lucre', 'luma@s.com');
 
 --
 -- Índices para tablas volcadas
@@ -161,13 +199,13 @@ ALTER TABLE `ejercicio_cadaver`
 -- AUTO_INCREMENT de la tabla `ejercicio_cadaver_usuario`
 --
 ALTER TABLE `ejercicio_cadaver_usuario`
-  MODIFY `id_frase_creada` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_frase_creada` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
